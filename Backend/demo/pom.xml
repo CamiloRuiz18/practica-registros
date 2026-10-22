@@ -8,9 +8,14 @@
 		<version>4.1.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
+	<!-- Identicadad del proyecto -->
 	<groupId>com.registros</groupId>
 	<artifactId>demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
+    <!-- -->
+
 	<name>demo</name>
 	<description/>
 	<url/>
@@ -29,6 +34,8 @@
 	<properties>
 		<java.version>21</java.version>
 	</properties>
+
+	<!-- Dependencias -->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -56,6 +63,7 @@
 		</dependency>
 	</dependencies>
 
+    <!-- Maven en Spring -->
 	<build>
 		<plugins>
 			<plugin>

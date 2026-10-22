@@ -12,7 +12,7 @@
 
     <div class="registro">
 
-        <h1 style="color: black;">Registrarse</h1>
+        <h1 style="color: black; padding: 10px;">Registrarse</h1>
 
         <form action="/registro" method="post">
 
@@ -43,18 +43,18 @@
     </div>
 
     <div class="sesion">
-        
-        <h1 style="color: black;">Iniciar Sesion</h1>
+
+        <h1 style="color: black; padding: 10px;">Iniciar Sesion</h1>
 
         <form action="/iniciarSesion" method="post">
-            
+
             <div class="campo">
                 <input type="text" id="emailSesion">
                 <label for="emailSesion">Correo Electronico</label>
             </div>
 
             <div class="campo">
-                <input type="passwordSesion" id="passwordSesion">
+                <input type="password" id="passwordSesion">
                 <label for="passwordSesion">Contraseña</label>
             </div>
 
@@ -64,6 +64,22 @@
 
     </div>
 
+    <script>
+        const inputsLogin = document.querySelectorAll(".campo input")
+
+        inputsLogin.forEach(inputs => {
+            inputs.addEventListener("focus", () => {
+                inputs.nextElementSibling.classList.add("up") //next...significa "el siguiente elemento hermano" 
+            })
+
+            inputs.addEventListener("blur", () => { //blur es lo contrario de cuando tiene el focus
+                if (inputs.value === "") {
+                    inputs.nextElementSibling.classList.remove("up")
+                }
+            })
+
+        })
+    </script>
 </body>
 
 </html>

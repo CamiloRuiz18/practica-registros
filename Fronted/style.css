@@ -93,8 +93,13 @@ body {
 .campo input:focus + label{
     top: -9px;
     left: 26px;
-    background-color: rgba(255, 255, 255, 0.745);
+    background-color: rgb(255, 255, 255);
     transform: scale(1.05);
     transition: top 0.5s ease;
-    color: black;
+    color: rgb(71, 154, 249);
+}
+.campo label.up {
+    top: -9px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(71, 154, 249);
 }
