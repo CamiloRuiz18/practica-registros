@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REGISTRO 1</title>
+    <link rel="stylesheet" href="/Fronted/style.css">
 </head>
+
 <body>
-    
+
+    <div class="registro">
+
+        <h1 style="color: black;">Registrarse</h1>
+
+        <form action="/registro" method="post">
+
+            <div class="campo">
+                <input type="text" id="name">
+                <label for="name">Nombres</label>
+            </div>
+
+            <div class="campo">
+                <input type="text" id="firstName">
+                <label for="firstName">Apellidos</label>
+            </div>
+
+            <div class="campo">
+                <input type="email" id="email">
+                <label for="email">Correo Electronico</label>
+            </div>
+
+            <div class="campo">
+                <input type="password" id="password">
+                <label for="password">Contraseña</label>
+            </div>
+
+        </form>
+
+        <button class="botones registrarse">REGISTRARSE</button>
+
+    </div>
+
+    <div class="sesion">
+        
+        <h1 style="color: black;">Iniciar Sesion</h1>
+
+        <form action="/iniciarSesion" method="post">
+            
+            <div class="campo">
+                <input type="text" id="emailSesion">
+                <label for="emailSesion">Correo Electronico</label>
+            </div>
+
+            <div class="campo">
+                <input type="passwordSesion" id="passwordSesion">
+                <label for="passwordSesion">Contraseña</label>
+            </div>
+
+        </form>
+
+        <button class="botones iniciar">INICIAR SESION</button>
+
+    </div>
+
 </body>
+
 </html>
